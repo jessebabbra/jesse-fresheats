@@ -1,3 +1,199 @@
 body {
-    background: #a1dae3 url("../media/webpacklogo.png") repeat;
+    background: #fff;
+    padding: 25px;
+    margin: 10px;
+}
+
+main {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo-container {
+    width: 200px;
+    height: 120px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.navitem a {
+    display: flex;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navitem:hover {
+    background-color: white;
+}
+
+.navitem:hover a {
+    color: #d3d3d3;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.col {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+#howitworks {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#chooseaplan {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#viewourmenu {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#loginsignup {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #ffd0c2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #eea793;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: #ffe8e1;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
